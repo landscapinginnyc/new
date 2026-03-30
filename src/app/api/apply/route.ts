@@ -10,7 +10,7 @@ const supabase = createClient(
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO = "green@landscapinginnyc.com";
-const FROM = "Landscaping Applications <notifications@landscapinginnyc.com>";
+const FROM = "Landscaping Applications <notifications@consortiumnyc.com>";
 
 export async function POST(req: NextRequest) {
   try {

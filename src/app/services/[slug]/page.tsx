@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = findServiceBySlug(slug);
   if (!service) return {};
 
-  const title = `${service.name} in NYC — Features, Process & What to Expect`;
-  const description = `${service.shortDesc} Features, process, expert tips, and how to get started with ${service.name} in New York City. Free estimates available.`;
+  const title = `${service.h1} | Free Estimate`;
+  const description = `${service.tagline} Features, process, expert tips, and how to get started with ${service.name} in New York City. Free estimates available.`;
 
   return {
     title,

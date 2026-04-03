@@ -12,6 +12,7 @@ export const ADDRESS = "150 W 47th St, New York, NY 10036";
 
 export interface Service {
   name: string;
+  h1: string;
   slug: string;
   tagline: string;
   shortDesc: string;
@@ -22,8 +23,9 @@ export interface Service {
 export const services: Service[] = [
   {
     name: "Landscape Design",
+    h1: "Custom Landscape Design & Architecture for NYC Brownstones, Townhouses & Estates",
     slug: "landscape-design",
-    tagline: "Custom Landscape Design for Every NYC Property",
+    tagline: "Bespoke outdoor environments that maximize every square foot — 3D renderings, native plant selection, hardscape integration, water features, and phased installation plans tailored to your NYC property's unique conditions and your budget.",
     shortDesc:
       "Bespoke landscape architecture and design plans tailored to New York City properties of every size.",
     description:
@@ -41,8 +43,9 @@ export const services: Service[] = [
   },
   {
     name: "Rooftop Gardens & Terraces",
+    h1: "Rooftop Garden Design & Installation for NYC Apartments, Condos & Commercial Buildings",
     slug: "rooftop-gardens",
-    tagline: "Transform Your NYC Rooftop Into a Green Oasis",
+    tagline: "Turn your NYC rooftop into a private green retreat — structural load assessments, waterproofing coordination, wind-resistant plantings, built-in irrigation, custom planters, pergolas, and co-op board approval support all handled for you.",
     shortDesc:
       "Expert rooftop garden design and installation for apartments, condos, and commercial buildings across New York City.",
     description:
@@ -60,8 +63,9 @@ export const services: Service[] = [
   },
   {
     name: "Irrigation Systems",
+    h1: "Smart Irrigation System Design, Installation & Maintenance for NYC Landscapes & Rooftops",
     slug: "irrigation-systems",
-    tagline: "Smart Irrigation Systems Built for NYC Landscapes",
+    tagline: "Automated drip and spray systems with WiFi controllers, rain sensors, and weather-based scheduling — built for NYC's freeze-thaw cycle with winterization and spring startup included to keep your landscape green from April through November.",
     shortDesc:
       "Automated irrigation design, installation, and maintenance to keep your landscape green all season long.",
     description:
@@ -79,8 +83,9 @@ export const services: Service[] = [
   },
   {
     name: "Landscape Lighting",
+    h1: "Low-Voltage LED Landscape Lighting Design & Installation for NYC Homes & Businesses",
     slug: "landscape-lighting",
-    tagline: "Professional Landscape Lighting for NYC Properties",
+    tagline: "Energy-efficient LED path lights, tree uplighting, step lighting, and outdoor entertainment area illumination — custom-designed to add drama, safety, and curb appeal to your NYC property after dark.",
     shortDesc:
       "Low-voltage LED landscape lighting that enhances beauty, safety, and security for homes and businesses.",
     description:
@@ -98,8 +103,9 @@ export const services: Service[] = [
   },
   {
     name: "Lawn & Garden Maintenance",
+    h1: "Year-Round Lawn Mowing, Fertilization & Garden Maintenance Services Across NYC",
     slug: "lawn-garden-maintenance",
-    tagline: "Year-Round Lawn & Garden Care Across New York City",
+    tagline: "Weekly mowing, edging, seasonal fertilization, core aeration, overseeding, shrub trimming, mulching, and fall leaf removal — flexible scheduling and customized care plans for residential yards, commercial properties, and community gardens across all five boroughs.",
     shortDesc:
       "Comprehensive lawn mowing, edging, fertilization, and garden upkeep on weekly, biweekly, or monthly schedules.",
     description:
@@ -117,8 +123,9 @@ export const services: Service[] = [
   },
   {
     name: "Snow Removal",
+    h1: "NYC Snow Removal & Ice Management — Residential Driveways, Commercial Lots & Sidewalks",
     slug: "snow-removal",
-    tagline: "Reliable NYC Snow Removal — Residential & Commercial",
+    tagline: "Seasonal contracts and on-call service with professional-grade plowing, shoveling, eco-friendly de-icing, 24/7 storm monitoring, and NYC sidewalk compliance — from light dustings to major nor'easters, we keep your property safe and accessible.",
     shortDesc:
       "Fast, dependable snow plowing, shoveling, and ice management for NYC properties of all sizes.",
     description:
@@ -136,8 +143,9 @@ export const services: Service[] = [
   },
   {
     name: "Seasonal Flower Rotations",
+    h1: "Seasonal Flower Bed Plantings & Color Rotations for NYC Properties — Spring, Summer & Fall",
     slug: "seasonal-flower-rotations",
-    tagline: "Vibrant Seasonal Color for NYC Landscapes Year-Round",
+    tagline: "Spring bulbs, summer annuals, fall mums, and winter holiday displays — premium plantings rotated each season with soil prep, deadheading, and replacement included so your beds always look their absolute best.",
     shortDesc:
       "Professional flower bed plantings rotated each season to keep your property colorful and inviting.",
     description:
@@ -155,8 +163,9 @@ export const services: Service[] = [
   },
   {
     name: "Tree & Shrub Care",
+    h1: "Tree Pruning, Deep Root Feeding & Shrub Care for NYC Properties — Certified Arborists",
     slug: "tree-shrub-care",
-    tagline: "Expert Tree & Shrub Care for NYC Properties",
+    tagline: "Structural pruning, deep root fertilization, pest and disease treatment, storm damage cleanup, and seasonal health inspections by certified arborists who understand urban tree care challenges — compacted soils, limited root zones, and salt exposure.",
     shortDesc:
       "Pruning, feeding, pest management, and health assessments for trees and shrubs across New York City.",
     description:
@@ -174,8 +183,9 @@ export const services: Service[] = [
   },
   {
     name: "Patio & Hardscape Design",
+    h1: "Bluestone Patio, Natural Stone Walkway & Hardscape Design for NYC Homes & Properties",
     slug: "patio-hardscape-design",
-    tagline: "Custom Patios & Hardscapes for NYC Outdoor Living",
+    tagline: "Extend your living space outdoors with custom-built patios, walkways, steps, and gathering areas using bluestone, flagstone, brick pavers, and porcelain tile — with proper grading, drainage, and a compacted base built to last decades.",
     shortDesc:
       "Bluestone, brick, and natural stone patios, walkways, and outdoor living areas designed and built to last.",
     description:
@@ -193,8 +203,9 @@ export const services: Service[] = [
   },
   {
     name: "Retaining Walls",
+    h1: "Retaining Wall Construction for NYC Properties — Natural Stone, Block & Boulder Systems",
     slug: "retaining-walls",
-    tagline: "Durable Retaining Walls for NYC Properties",
+    tagline: "Engineered retaining walls that manage slopes, prevent erosion, and create usable terraced space — natural stone, concrete block, timber, and boulder systems with proper drainage, backfill, and NYC DOB permits handled.",
     shortDesc:
       "Engineered retaining walls that solve grading challenges and add architectural beauty to your landscape.",
     description:
@@ -212,8 +223,9 @@ export const services: Service[] = [
   },
   {
     name: "Sod & Turf Installation",
+    h1: "Sod Laying & Artificial Turf Installation for NYC Lawns, Rooftops & Play Areas",
     slug: "sod-turf-installation",
-    tagline: "Instant Green Lawns — Sod & Turf Installation in NYC",
+    tagline: "Instant green lawns with premium Kentucky Bluegrass and Fescue sod or maintenance-free synthetic turf — complete soil prep, grading, drainage, starter fertilization, and post-installation care guidance for NYC yards of every size.",
     shortDesc:
       "Professional sod laying and artificial turf installation for lawns, play areas, and rooftops.",
     description:
@@ -231,8 +243,9 @@ export const services: Service[] = [
   },
   {
     name: "Drainage Solutions",
+    h1: "French Drains, Dry Wells & Stormwater Drainage Solutions for Waterlogged NYC Properties",
     slug: "drainage-solutions",
-    tagline: "Fix Water Problems with NYC Drainage Solutions",
+    tagline: "Stop standing water and foundation damage — French drains, channel drains, dry wells, regrading, downspout rerouting, and permeable paving solutions designed for NYC's unique soil conditions, tight property lines, and DEP stormwater compliance.",
     shortDesc:
       "French drains, dry wells, grading corrections, and stormwater management for waterlogged NYC properties.",
     description:
@@ -250,8 +263,9 @@ export const services: Service[] = [
   },
   {
     name: "Commercial Landscaping",
+    h1: "Commercial Landscaping Services for NYC Office Buildings, Retail Centers, Hotels & HOAs",
     slug: "commercial-landscaping",
-    tagline: "Professional Commercial Landscaping Across NYC",
+    tagline: "Full-service commercial grounds management — landscape design, year-round maintenance contracts, seasonal color displays, snow and ice management, irrigation monitoring, and NYC zoning compliance for high-traffic commercial properties.",
     shortDesc:
       "Full-service landscaping for office buildings, retail centers, restaurants, hotels, and commercial properties.",
     description:
@@ -269,8 +283,9 @@ export const services: Service[] = [
   },
   {
     name: "Residential Landscaping",
+    h1: "Residential Landscaping for NYC Brownstones, Townhouses & Single-Family Homes",
     slug: "residential-landscaping",
-    tagline: "Beautiful Residential Landscaping for NYC Homeowners",
+    tagline: "Custom front and backyard landscapes designed for NYC homeowners — brownstone gardens, privacy screening, outdoor entertaining areas, curb appeal upgrades, and year-round maintenance plans from Brooklyn to Westchester and Long Island.",
     shortDesc:
       "Complete landscaping services for brownstones, townhouses, single-family homes, and residential properties.",
     description:
@@ -288,8 +303,9 @@ export const services: Service[] = [
   },
   {
     name: "Planting & Garden Beds",
+    h1: "Garden Bed Design, Perennial Planting & Ornamental Installation for NYC Properties",
     slug: "planting-garden-beds",
-    tagline: "Expert Planting & Garden Bed Design in NYC",
+    tagline: "Curated mixes of perennials, ornamental grasses, ground covers, and flowering shrubs tailored to your site's sun, soil, and style — with proper edging, amended soil, mulching, and four-season interest planting plans that thrive year after year.",
     shortDesc:
       "Professional garden bed creation, plant installation, and ornamental planting for NYC properties.",
     description:
@@ -307,8 +323,9 @@ export const services: Service[] = [
   },
   {
     name: "Fence & Gate Installation",
+    h1: "Wood, Metal & Vinyl Fence Installation with Custom Gates for NYC Homes & Businesses",
     slug: "fence-gate-installation",
-    tagline: "Quality Fence & Gate Installation for NYC Properties",
+    tagline: "Cedar, aluminum, wrought iron, vinyl, and composite fencing in every style — custom entry gates, automated openers, pool enclosures to code, and NYC permit coordination with proper post setting and level alignment built to last.",
     shortDesc:
       "Wood, metal, vinyl, and composite fencing with custom gates for privacy, security, and style.",
     description:
@@ -326,8 +343,9 @@ export const services: Service[] = [
   },
   {
     name: "Outdoor Living Spaces",
+    h1: "Outdoor Kitchen, Fire Pit & Pergola Design for NYC Backyards, Terraces & Rooftops",
     slug: "outdoor-living-spaces",
-    tagline: "Design & Build Outdoor Living Spaces in NYC",
+    tagline: "Turn your outdoor space into a year-round living extension — custom kitchens, fire pits, fireplaces, pergolas, built-in seating, outdoor audio and TV, gas hookups, and weather-resistant finishes designed for how you actually live and entertain.",
     shortDesc:
       "Custom outdoor kitchens, fire pits, pergolas, and entertainment areas for NYC homes and businesses.",
     description:
@@ -345,8 +363,9 @@ export const services: Service[] = [
   },
   {
     name: "Power Washing & Cleanup",
+    h1: "Power Washing for Patios, Driveways & Fences + Full Property Cleanup in NYC",
     slug: "power-washing-cleanup",
-    tagline: "Professional Power Washing & Property Cleanup in NYC",
+    tagline: "Restore stone, brick, concrete, decks, and fences to like-new condition — high-pressure and soft washing, algae and mold treatment, stain removal, debris clearing, overgrowth cleanup, and post-construction site preparation.",
     shortDesc:
       "High-pressure washing for patios, driveways, siding, and fences plus full property debris cleanup.",
     description:

@@ -353,7 +353,7 @@ export default function ServicePageClient({ service, otherServices, content }: P
             animate={{ opacity: 1, y: 0 }}
             className="mb-3 text-sm font-semibold uppercase tracking-widest text-green-200 font-cta"
           >
-            {service.tagline}
+            NYC Landscaping Service
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -361,10 +361,7 @@ export default function ServicePageClient({ service, otherServices, content }: P
             transition={{ delay: 0.1 }}
             className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl font-heading"
           >
-            {service.name}
-            <span className="block mt-2 text-xl sm:text-2xl lg:text-3xl text-green-200 font-medium">
-              {service.tagline}
-            </span>
+            {service.h1}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -372,8 +369,28 @@ export default function ServicePageClient({ service, otherServices, content }: P
             transition={{ delay: 0.2 }}
             className="mx-auto mt-4 max-w-2xl text-lg text-white/80"
           >
-            {service.shortDesc}
+            {service.tagline}
           </motion.p>
+          {/* Inner links to related services */}
+          {otherServices.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25 }}
+              className="mx-auto mt-5 flex flex-wrap items-center justify-center gap-2 max-w-3xl"
+            >
+              <span className="text-xs font-semibold uppercase tracking-wider text-green-200/70">Related:</span>
+              {otherServices.slice(0, 5).map((s) => (
+                <Link
+                  key={s.slug}
+                  href={getServiceUrl(s)}
+                  className="rounded-full border border-white/20 px-3 py-1 text-xs font-medium text-white/70 transition-colors hover:border-green-300 hover:text-white hover:bg-white/10"
+                >
+                  {s.name}
+                </Link>
+              ))}
+            </motion.div>
+          )}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

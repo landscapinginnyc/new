@@ -190,7 +190,7 @@ export function articleSchema(
 export function localBusinessSchema(boroughName?: string) {
   return {
     "@context": "https://schema.org",
-    "@type": "LandscapingBusiness",
+    "@type": "LocalBusiness",
     "@id": `${DOMAIN}/#localbusiness`,
     name: BIZ_NAME,
     description: boroughName

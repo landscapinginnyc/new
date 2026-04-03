@@ -39,7 +39,7 @@ export default function AboutPage() {
             name: `About ${SITE_NAME}`,
             url: `${SITE_DOMAIN}/about`,
             mainEntity: {
-              "@type": "LandscapingBusiness",
+              "@type": "LocalBusiness",
               name: SITE_NAME,
               url: SITE_DOMAIN,
               telephone: "(212) 470-9637",

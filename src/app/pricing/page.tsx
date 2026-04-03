@@ -200,7 +200,7 @@ export default function PricingPage() {
               ],
             },
             provider: {
-              "@type": "LandscapingBusiness",
+              "@type": "LocalBusiness",
               name: SITE_NAME,
               url: SITE_DOMAIN,
               telephone: "(212) 470-9637",

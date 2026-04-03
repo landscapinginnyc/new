@@ -14,7 +14,7 @@ const homeFAQs = [
 
 const reviewSchema = {
   "@context": "https://schema.org",
-  "@type": "LandscapingBusiness",
+  "@type": "LocalBusiness",
   name: SITE_NAME,
   url: SITE_DOMAIN,
   telephone: "+1-212-470-9637",
